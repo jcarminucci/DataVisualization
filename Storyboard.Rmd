@@ -1,0 +1,50 @@
+---
+title: "U.S. Public School Characteristics and Achievement"
+bibliography: testVisual.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard) # always
+```
+
+## Sidebar {.sidebar}
+
+This dashboard presents several characteristics, including those relating to mathematics and reading achievement for U.S. public schools. Schools of all levels are included here, including elementary, middle, and high schools. Adult education program data are excluded.
+
+## Column {.tabset .tabset-fade}
+
+
+### Locales of U.S. Public Schools
+
+```{r}
+readRDS("barchart.rds")
+```
+
+
+### School Enrollment Sizes
+
+```{r}
+readRDS("histogram.rds")
+```
+
+### Achievement by Locale
+
+```{r}
+readRDS("boxplot.rds")
+```
+
+
+### Average Achievement in U.S. States
+
+```{r}
+readRDS("map.rds")
+```
+
+
+### References 
+
+- Reardon, S. F., Ho, A. D., Shear, B. R., Fahle, E. M., Kalogrides, D., Saliba, J. (2024). Stanford Education Data Archive (Version 5.0). Retrieved from https://purl.stanford.edu/cs829jn7849.
+- U.S. Department of Education. (2019). 2018–19 National Center for Education Statistics (NCES) Common Core of Data. https://nces.ed.gov/ccd/files.asp
+
