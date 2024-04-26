@@ -13,6 +13,8 @@ library(flexdashboard) # always
 
 This dashboard presents several characteristics, including those relating to mathematics and reading achievement for U.S. public schools. Schools of all levels are included here, including elementary, middle, and high schools. Adult education program data are excluded.
 
+The data and code used to create these data visualizations can be found [here on Github](https://github.com/jcarminucci/DataVisualization).
+
 ## Column {.tabset .tabset-fade}
 
 

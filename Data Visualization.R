@@ -8,8 +8,8 @@ rm(list = ls())
 
 # read in data ------------------------------------------------------------
 #set working directory
-setwd("/Users/joannecarminucci/OneDrive - brandeis.edu/Grad School")
-schooldemo=read_csv("DACSS 690.csv")
+setwd("/Users/joannecarminucci/Documents/GitHub/DataVisualization/")
+schooldemo=read_csv("DACSS_690.csv")
 
 # see data ----------------------------------------------------------
 
@@ -33,7 +33,7 @@ draft1 = base + geom_bar(aes(x=Var1, y=pct), stat="identity",
                          width = 0.5) + 
   labs(title = "Urbanicity of U.S. Public Schools",
        subtitle = "The percentage of U.S. public schools located in each type of locale",
-       caption = "Source: NCES Common Core of Data, 2019") +
+       caption = "Source: NCES Common Core of Data, 2023") +
   xlab("Locale Type") +
   ylab("Percent of Schools") + 
   geom_text(aes(x = Var1, y=pct, label = labels), 
@@ -70,7 +70,7 @@ draft2 = base +
   ylab("Number of Schools") +
   labs(title = "Sizes of U.S. Public Schools",
       subtitle = "The numbers of U.S. public schools according to their size",
-      caption = "Source: NCES Common Core of Data, 2019") +
+      caption = "Source: NCES Common Core of Data, 2023") +
   theme(
     plot.title = element_text(size = 14, hjust = 0.5, family = "Verdana"),
     plot.subtitle = element_text(size = 11, hjust = 0.7, family = "Verdana", face="italic"),
